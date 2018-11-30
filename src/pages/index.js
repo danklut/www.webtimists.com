@@ -1,15 +1,29 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import styled, { injectGlobal } from 'react-emotion'
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+injectGlobal`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+`
+
+const Container = styled('div')`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+`
 
 const IndexPage = () => (
-  <div>
+  <Container>
     <h1>Webtimists Ltd.</h1>
     <p>coming soon...</p>
     <a href="mailto:hello@webtimists.com">hello@webtimists.com</a>
-  </div>
+  </Container>
 )
 
 export default IndexPage
