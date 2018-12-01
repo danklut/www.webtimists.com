@@ -27,6 +27,7 @@ const Container = styled('div')`
   justify-content: center;
   height: 100vh;
   width: 100%;
+  padding-bottom: 2rem;
 `
 
 const Header = styled('h1')`
